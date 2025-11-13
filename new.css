@@ -49,3 +49,36 @@ h1 {
     color: #fff;
     cursor: pointer;
 }
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#clearGallery {
+  background-color: #e74c3c;  /* Red color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#clearGallery:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+#clearGallery:active {
+  transform: translateY(1px);
+}
+
+#fileInput {
+  padding: 6px;
+  font-size: 14px;
+}

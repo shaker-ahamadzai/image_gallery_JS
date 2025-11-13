@@ -101,3 +101,11 @@ function closeLightbox() {
     lightBox.style.display = 'none';
 }
 
+document.querySelector("#clearGallery").addEventListener("click", () => {
+    localStorage.removeItem("images");
+    imags = [];
+    displayImage();
+});
+
+
+

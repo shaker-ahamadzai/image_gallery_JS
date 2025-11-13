@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="new.css">
 </head>
 <body>
+    
     <h1>
         Photo Gallery
     </h1>
 
-    <input type="file" id="fileInput" accept="image/" multiple>
+    <div class="controls">
+      <input type="file" id="fileInput" multiple accept="image/*">
+      <button id="clearGallery">🗑️ Clear Gallery</button>
+    </div>
+    
     <div id="gallery" class="gallery"></div>
     <div class="lighbox" id="lightbox">
         <span class="close" onclick="closeLightbox()">&times;</span>
@@ -20,3 +25,4 @@
     <script src="new.js"></script>
 </body>
 </html>
+
